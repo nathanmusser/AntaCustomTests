@@ -1,0 +1,23 @@
+# pyproject.toml
+
+[build-system]
+# Specify the build backend and dependencies
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Package Metadata
+name = "AntaCustomTests" # The name users will use to install (pip install my-package)
+version = "0.1.0"
+authors = [
+    { name="Nathan Musser", email="nmusser@arista.com" },
+]
+description = "ANTA Custom Tests"
+requires-python = ">=3.10"
+dependencies = [
+  "anta>=1.6.0",
+]
+
+[tool.setuptools.packages]
+# This tells setuptools to automatically find and include all packages
+find = {}
